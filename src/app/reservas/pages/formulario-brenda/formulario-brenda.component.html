@@ -1,0 +1,283 @@
+<header class="navbar navbar-fixed">
+    <nav class=" red">
+        <div id="side-opt" class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="left sidenav-trigger show-on-large brand-logo">
+                <i class="material-icons">menu</i> DATUM
+            </a>
+        </div>
+    </nav>
+    <br>
+</header>
+
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img
+                    src="https://media.istockphoto.com/vectors/white-studio-background-vector-template-vector-id1192900976?k=20&m=1192900976&s=612x612&w=0&h=DcM2FlrVPCeeUy5Mf7Zaf8bYD9T9bipd1G9kpyHPre0=">
+            </div>
+            <a href="#user"><img class="circle"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"></a>
+            <a href="#name"><span class="white-text name">Nombre Del Usuario</span></a>
+            <a href="#email"><span class="white-text email">correo@cliente.com</span></a>
+        </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">logout</i>Cerrar Sessión</a></li>
+
+</ul>
+
+
+<div class="container ">
+
+    <div class="row">
+        <div class="col m8 s12">
+            <h2>Portal de administración de reserva de viajes</h2>
+
+        </div>
+        <div class="col m4 s12">
+            <div class="center">
+                <br>
+                <br>
+                <img height="70px" src="https://dfls.datumredsoft.com/DFLS/images/datum-redsoft-mobile.png" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <h5>LUIS ALONSO GUZMAN</h5>
+        </div>
+    </div>
+
+    <form class="row ">
+        <div class="input-field col s12 m3">
+            <select disabled="" [(ngModel)]="tipoViaje" name="tipoViaje">
+                <option value="1" selected>Corporativo</option>
+                <option value="2">Marketing</option>
+                <option value="3">Proyecto</option>
+                <option value="2">Capacitacion</option>
+                <option value="2">Administrativo</option>
+            </select>
+            <label>Tipo de viaje</label>
+        </div>
+
+        <div class="input-field col s12 m12" *ngIf="tipoViaje=='3'">
+            <input disabled="" id="first_name" type="text" value="Nombre del Cliente">
+            <label for="first_name" class="active">Nombre del cliente</label>
+        </div>
+
+        <div class="input-field col s12" *ngIf="tipoViaje=='3'">
+            <input disabled="" id="first_name" type="text" value="Nombre del proyecto">
+            <label for="first_name" class="active">Nombre del proyecto</label>
+        </div>
+
+
+
+
+
+
+
+        <div class="col s12">
+
+        </div>
+
+        <div class="input-field col s12 m3">
+            <input disabled="" id="first_name" type="text" value="El Salvador">
+            <label for="first_name" class="active">Origen</label>
+        </div>
+
+        <div class="input-field col s12 m3">
+            <input disabled="" id="first_name" type="text" value="Honduras">
+            <label for="first_name" class="active">Destino</label>
+        </div>
+
+        <div class="col m2 s12">
+            <label for="first_name" class="active">Fecha de salida</label>
+            <input disabled="" type="text" class="datepicker" value="Jun 10, 2022">
+        </div>
+        <div class="input-field col s12 m2">
+            <select disabled="" name="salida">
+                <option value="1" selected>Mañana</option>
+                <option value="2">Tarde</option>
+                <option value="2">Noche</option>
+                <option value="2">Indiferente</option>
+            </select>
+            <label>Hora de salida</label>
+        </div>
+        <div class="input-field col s12 m2">
+            <select disabled="" name="hospedaje">
+                <option value="2" selected>Hotel</option>
+                <option value="2">Apartemento</option>
+                <option value="2">No Aplica</option>
+            </select>
+            <label>Hospedaje</label>
+        </div>
+
+
+
+        <div class="col s12">
+
+        </div>
+
+        <div class="input-field col s12 m3">
+            <input disabled="" id="first_name" type="text" value="Honduras">
+            <label for="first_name" class="active">Origen</label>
+        </div>
+
+        <div class="input-field col s12 m3">
+            <input disabled="" id="first_name" type="text" value="El Salvador">
+            <label for="first_name" class="active">Destino</label>
+        </div>
+
+        <div class="col m2 s12">
+            <label for="first_name" class="active">Fecha de salida</label>
+            <input disabled="" type="text" class="datepicker" value="Jun 12, 2022">
+        </div>
+        <div class="input-field col s12 m2">
+            <select disabled="" name="salida">
+                <option value="1">Mañana</option>
+                <option value="2" selected>Tarde</option>
+                <option value="2">Noche</option>
+                <option value="2">Indiferente</option>
+            </select>
+            <label>Hora de salida</label>
+        </div>
+        <div class="input-field col s12 m2">
+            <select name="hospedaje" disabled>
+                <option value="2">Hotel</option>
+                <option value="2">Apartemento</option>
+                <option value="2" selected>No Aplica</option>
+            </select>
+            <label>Hospedaje</label>
+        </div>
+
+
+
+
+
+        <div class="col s12">
+            <label for="">¿Posee tarjeta coorporativa?</label>
+            <br>
+            <div class="switch">
+
+                <label>
+                    No
+                    <input disabled="" type="checkbox">
+                    <span class="lever"></span>
+                    Si
+                </label>
+            </div>
+        </div>
+        <div class="col m12">
+            <br>
+
+
+            <br>
+        </div>
+
+
+
+        <div class="col s12">
+            <form action="" class="row ">
+                <div class="col m12">
+                    <br><br><br>
+                    <h5>Detalle de solicitud</h5>
+                </div>
+
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="AWEW12">
+                    <label for="first_name" class="active">Código de reservación</label>
+                </div>
+
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="$360.00">
+                    <label for="first_name" class="active">Costo de vuelo</label>
+                </div>
+
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="$60.00">
+                    <label for="first_name" class="active">Viaticos diarios</label>
+                </div>
+
+                <div class="col s12">
+                    <p><b>Jun 10, 2022 El Salvador - Honduras</b></p>
+                </div>
+
+
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="15215">
+                    <label for="first_name" class="active">Numero de vuelo</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="Volaris">
+                    <label for="first_name" class="active">Aerolinea</label>
+                </div>
+
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="10/05/2022 08:00">
+                    <label for="first_name" class="active">Fecha y Hora de salida</label>
+                </div>
+
+
+                <div class="col s12">
+                    <p><b>Jun 10, 2022 Honduras - El Salvador</b></p>
+                </div>
+
+
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="15216">
+                    <label for="first_name" class="active">Numero de vuelo</label>
+                </div>
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="Volaris">
+                    <label for="first_name" class="active">Aerolinea</label>
+                </div>
+
+                <div class="input-field col s12 m4">
+                    <input id="first_name" type="text" value="12/05/2022 20:00">
+                    <label for="first_name" class="active">Fecha y Hora de salida</label>
+                </div>
+
+
+
+            </form>
+        </div>
+
+        <div class="input-field col s12">
+
+            <textarea id="textarea1" cols="30" rows="10" class="materialize-textarea" [(ngModel)]="motivo"
+                name="motivo"></textarea>
+            <label for="textarea1" class="active">Comentarios</label>
+        </div>
+
+
+    </form>
+
+    <div class="row">
+        <div class="col m12 s12">
+            <div class="col s12 ">
+
+                <p>
+                    <button style="margin-bottom: 20px;" class="btn grey-cyan col s12 m2 " (click)="regresar()">Cancelar</button>
+                    <button style="margin-bottom: 20px;" class="btn orange darken-3 col s12 m3 offset-m1" (click)="enviarSolicitante()">Enviar a Solicitante</button>
+                    <button style="margin-bottom: 20px;" class="btn red  col s12 m2 offset-m1" (click)="Rechazada()">Rechazar</button>
+                    <button style="margin-bottom: 20px;" class="btn red col s12 m2 offset-m1" (click)="regresar2()">Aprobar</button>
+                </p>
+
+              
+
+
+                   
+              
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+</div>

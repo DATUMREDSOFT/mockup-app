@@ -1,1 +1,124 @@
 /* You can add global styles to this file, and also import other style files */
+@import "../node_modules/material-icons/iconfont/material-icons.scss";
+@import "../node_modules/materialize-css/sass/materialize.scss";
+
+$color-gris: #7a7d83;
+$color-rojo: #ee2a32;
+$color-cyan: #88cfe0;
+$color-blanco: #ffffff;
+$color-negro: #212121;
+$color-gris-texto: #686868;
+$color-verde: #00a511;
+$color-amarillo: #ffc800;
+$blue-darken-4: #b4b4b4;
+
+.text-rojo{
+    color: $color-rojo !important;
+}
+
+.amarillo {
+    background: $color-amarillo !important;
+}
+
+.verde {
+    background: $color-verde !important;
+}
+
+.rojo {
+    background: $color-rojo !important;
+}
+
+.cyan {
+    background: $color-cyan !important;
+}
+
+/* You can add global styles to this file, and also import other style files */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar {
+    margin-bottom: 1%;
+}
+
+.card {
+    margin-bottom: 5px;
+
+    border-radius: 0px;
+}
+
+.red {
+    background: #ee2a32 !important;
+}
+
+.grey-cyan {
+    background: #5c8a99 !important;
+}
+
+@media only screen and (max-width: 600px) {
+    h2 {
+        font-size: 3rem;
+        line-height: 110%;
+        margin: 2.3733333333rem 0 1.424rem 0;
+    }
+}
+
+input:not([type]):focus:not([readonly]),
+input[type="text"]:not(.browser-default):focus:not([readonly]),
+input[type="password"]:not(.browser-default):focus:not([readonly]),
+input[type="email"]:not(.browser-default):focus:not([readonly]),
+input[type="url"]:not(.browser-default):focus:not([readonly]),
+input[type="time"]:not(.browser-default):focus:not([readonly]),
+input[type="date"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime"]:not(.browser-default):focus:not([readonly]),
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]),
+input[type="tel"]:not(.browser-default):focus:not([readonly]),
+input[type="number"]:not(.browser-default):focus:not([readonly]),
+input[type="search"]:not(.browser-default):focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: 1px solid $blue-darken-4 !important;
+    -webkit-box-shadow: 0 1px 0 0 $blue-darken-4 !important;
+    box-shadow: 0 1px 0 0 $blue-darken-4 !important;
+}
+
+.input-field .prefix.active {
+    color: $blue-darken-4 !important;
+}
+
+input:not([type]):focus:not([readonly]) + label,
+input[type="text"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="password"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="email"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="url"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="time"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="date"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="datetime"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="datetime-local"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="tel"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="number"]:not(.browser-default):focus:not([readonly]) + label,
+input[type="search"]:not(.browser-default):focus:not([readonly]) + label,
+textarea.materialize-textarea:focus:not([readonly]) + label {
+    color: $blue-darken-4 !important;
+}
+
+body::-webkit-scrollbar {
+    width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #6d6e71;
+}
+body::-webkit-scrollbar-thumb {
+    background:  #ee2a32 !important;
+    border-radius: 5px;
+}
+
+.ngx-pagination .current {
+    padding: 0.1875rem 0.625rem;
+    background: #ee2a32 !important;
+    color: #fefefe;
+    cursor: default;
+}
+
+textarea.materialize-textarea{height: 5rem;}

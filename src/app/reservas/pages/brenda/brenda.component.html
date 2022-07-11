@@ -1,0 +1,354 @@
+<header class="navbar navbar-fixed">
+    <nav class=" red">
+        <div id="side-opt" class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="left sidenav-trigger show-on-large brand-logo">
+                <i class="material-icons">menu</i> DATUM
+            </a>
+        </div>
+    </nav>
+    <br>
+</header>
+
+<ul id="slide-out" class="sidenav">
+    <li>
+        <div class="user-view">
+            <div class="background">
+                <img
+                    src="https://media.istockphoto.com/vectors/white-studio-background-vector-template-vector-id1192900976?k=20&m=1192900976&s=612x612&w=0&h=DcM2FlrVPCeeUy5Mf7Zaf8bYD9T9bipd1G9kpyHPre0=">
+            </div>
+            <a href="#user"><img class="circle"
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSzHQv_th9wq3ivQ1CVk7UZRxhbPq64oQrg5Q&usqp=CAU"></a>
+            <a href="#name"><span class="white-text name">Nombre Del Usuario</span></a>
+            <a href="#email"><span class="white-text email">correo@cliente.com</span></a>
+        </div>
+    </li>
+    <li><a href="#!"><i class="material-icons">logout</i>Cerrar Sessión</a></li>
+
+</ul>
+
+
+<div class="container ">
+
+    <div class="row">
+        <div class="col m8 s12">
+            <h2>Portal de administración de reserva de viajes</h2>
+
+        </div>
+        <div class="col m4 s12">
+            <div class="center">
+                <br>
+                <br>
+                <img height="70px" src="https://dfls.datumredsoft.com/DFLS/images/datum-redsoft-mobile.png" alt="">
+            </div>
+
+
+        </div>
+
+    </div>
+
+    <div class="row">
+       
+    </div>
+
+    <div class="row">
+        <div class="col s12">
+            <h3>Pendientes</h3>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card-panel show-on-small">
+                <div class="row">
+                    <div class="col s12">
+                        <span class="badge  white-text yellow darken-3">Aprobado por Gerente General</span>
+                        <br>
+                        <p class="center" style="margin-bottom: 0px;"><b>Tipo de viaje</b></p>
+                        <h4 class="center" style="margin-top: 0px;">Proyecto</h4>
+                        
+
+                        
+
+                        <p><b>Cliente: </b>
+                            <br>
+                            Nombre de Cliente
+                            <br>
+                        </p>
+                        <p class="flow-text " style="font-size: 16px ; margin-top: 0px;">
+                            <b>Solicitante: </b>
+                            <br>
+                            LUIS ALONSO GUZMAN
+                        </p>
+                        <p><b>Itinerario: </b>
+                            <br>
+                            01/01/2022 19:00 El Salvador - Nicaragua
+                            <br>
+                            03/01/2022 04:00 Nicaragua - Honduras
+                            <br>
+                            08/01/2022 09:00 Honduras - El Salvador
+
+                        </p>
+
+                        <ng-container>
+                            <p>
+                                <br><a [routerLink]="['/reserva/formulario-brenda']" class="btn grey-cyan col s12">VER DETALLE
+                                </a>
+                            </p>
+
+                           
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
+            <div class="col m12  s12 center">
+
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="col s12">
+            <h3>Historial</h3>
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card-panel show-on-small">
+                <div class="row">
+                    <div class="col s12">
+                        <span class="badge  white-text green">Aprobado</span>
+                        <br>
+                        <p class="center" style="margin-bottom: 0px;"><b>Tipo de Viaje</b></p>
+                        <h4 class="center" style="margin-top: 0px;">Corporativo</h4>
+
+                        <p><b>Cliente: </b>
+                            <br>
+                            No Aplica
+                            <br>
+
+                        </p>
+                        <p class="flow-text " style="font-size: 16px ; margin-top: 0px;">
+                            <b>Solicitante: </b>
+                            <br>
+                            NOMBRE COMPLETO
+                        </p>
+                        <p><b>Itinerario: </b>
+                            <br>
+                            01/01/2022 19:00 El Salvador - Honduras
+                            <br>
+                            03/01/2022 04:00 Honduras - El Salvador
+
+                        </p>
+
+                        <ng-container>
+                            <p>
+                                <br><a [routerLink]="['/reserva/formulario-historico']" class="btn grey-cyan col s12">VER DETALLE
+                                </a>
+                            </p>
+
+
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="col s12 m4">
+            <div class="card-panel show-on-small">
+                <div class="row">
+                    <div class="col s12">
+                        <span class="badge  white-text red">Rechazado</span>
+                        <br>
+                        <p class="center" style="margin-bottom: 0px;"><b>Tipo de Viaje</b></p>
+                        <h4 class="center" style="margin-top: 0px;">Corporativo</h4>
+
+                        <p><b>Cliente: </b>
+                            <br>
+                            No Aplica
+                            <br>
+
+                        </p>
+                        <p class="flow-text " style="font-size: 16px ; margin-top: 0px;">
+                            <b>Solicitante: </b>
+                            <br>
+                            NOMBRE COMPLETO
+                        </p>
+                        <p><b>Itinerario: </b>
+                            <br>
+                            01/01/2022 19:00 El Salvador - Honduras
+                            <br>
+                            03/01/2022 04:00 Honduras - El Salvador
+
+                        </p>
+
+                        <ng-container>
+                            <p>
+                                <br><a [routerLink]="['/reserva/formulario-historico']" class="btn grey-cyan col s12">VER DETALLE
+                                </a>
+                            </p>
+
+
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card-panel show-on-small">
+                <div class="row">
+                    <div class="col s12">
+                        <span class="badge  white-text grey">Aprobado</span>
+                        <br>
+                        <p class="center" style="margin-bottom: 0px;"><b>Tipo de Viaje</b></p>
+                        <h4 class="center" style="margin-top: 0px;">Corporativo</h4>
+
+                        <p><b>Cliente: </b>
+                            <br>
+                            No Aplica
+                            <br>
+
+                        </p>
+                        <p class="flow-text " style="font-size: 16px ; margin-top: 0px;">
+                            <b>Solicitante: </b>
+                            <br>
+                            NOMBRE COMPLETO
+                        </p>
+                        <p><b>Itinerario: </b>
+                            <br>
+                            01/01/2022 19:00 El Salvador - Honduras
+                            <br>
+                            03/01/2022 04:00 Honduras - El Salvador
+
+                        </p>
+
+                        <ng-container>
+                            <p>
+                                <br><a [routerLink]="['/reserva/formulario']" class="btn grey-cyan col s12">VER DETALLE
+                                </a>
+                            </p>
+
+
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="col s12 m4">
+            <div class="card-panel show-on-small">
+                <div class="row">
+                    <div class="col s12">
+                        <span class="badge  white-text grey">Aprobado</span>
+                        <br>
+                        <p class="center" style="margin-bottom: 0px;"><b>Tipo de Viaje</b></p>
+                        <h4 class="center" style="margin-top: 0px;">Corporativo</h4>
+
+                        <p><b>Cliente: </b>
+                            <br>
+                            No Aplica
+                            <br>
+
+                        </p>
+                        <p class="flow-text " style="font-size: 16px ; margin-top: 0px;">
+                            <b>Solicitante: </b>
+                            <br>
+                            NOMBRE COMPLETO
+                        </p>
+                        <p><b>Itinerario: </b>
+                            <br>
+                            01/01/2022 19:00 El Salvador - Honduras
+                            <br>
+                            03/01/2022 04:00 Honduras - El Salvador
+
+                        </p>
+
+                        <ng-container>
+                            <p>
+                                <br><a [routerLink]="['/reserva/formulario-historico']" class="btn grey-cyan col s12">VER DETALLE
+                                </a>
+                            </p>
+
+
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="col s12 m4">
+            <div class="card-panel show-on-small">
+                <div class="row">
+                    <div class="col s12">
+                        <span class="badge  white-text grey">Aprobado</span>
+                        <br>
+                        <p class="center" style="margin-bottom: 0px;"><b>Tipo de Viaje</b></p>
+                        <h4 class="center" style="margin-top: 0px;">Corporativo</h4>
+
+                        <p><b>Cliente: </b>
+                            <br>
+                            No Aplica
+                            <br>
+
+                        </p>
+                        <p class="flow-text " style="font-size: 16px ; margin-top: 0px;">
+                            <b>Solicitante: </b>
+                            <br>
+                            NOMBRE COMPLETO
+                        </p>
+                        <p><b>Itinerario: </b>
+                            <br>
+                            01/01/2022 19:00 El Salvador - Honduras
+                            <br>
+                            03/01/2022 04:00 Honduras - El Salvador
+
+                        </p>
+
+                        <ng-container>
+                            <p>
+                                <br><a [routerLink]="['/reserva/formulario-historico']" class="btn grey-cyan col s12">VER DETALLE
+                                </a>
+                            </p>
+
+
+                        </ng-container>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class="row">
+            <div class="col m12  s12 center">
+
+                <ul class="pagination">
+                    <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+                    <li class="active"><a href="#!">1</a></li>
+                    <li class="waves-effect"><a href="#!">2</a></li>
+                    <li class="waves-effect"><a href="#!">3</a></li>
+                    <li class="waves-effect"><a href="#!">4</a></li>
+                    <li class="waves-effect"><a href="#!">5</a></li>
+                    <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+                </ul>
+            </div>
+        </div>
+
+ 
+    </div>
+
+
+ 
+
+</div>
